@@ -19,7 +19,7 @@ router.get('/computation', function(req, res, next){
 
 router.get('/', function(req, res, next) {
 
-  more++; // Increment 'more' by 1
+  more = more + 1; // Increment 'more' by 1
     sum += more; // Add the value of 'more' to 'sum'
     res.send(`Sum is: ${sum}`);
 });
